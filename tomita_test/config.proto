@@ -1,0 +1,25 @@
+encoding "utf8";
+TTextMinerConfig {
+    Dictionary = "dic.gzt";
+    Input = {
+        File = "documents_dlp.txt"; // файл с анализируемым текстом
+        Type = dpl;                 // режим чтения
+    }
+
+    // Articles and Facts begins:
+
+    Articles = [
+        { Name = "грамматика" }
+    ]
+
+    Facts = [
+        { Name = "Fact" }
+    ]
+
+    NumThreads = 2;
+    
+    // Articles and Facts end.
+    Output = {
+        File = "facts.xml";
+    }
+}

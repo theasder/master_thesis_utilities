@@ -1,0 +1,10 @@
+encoding "utf8";
+
+import "base.proto";
+import "articles_base.proto";
+import "fact_types.proto";
+
+TAuxDicArticle "грамматика"
+{
+    key = {"tomita:grammar.cxx" type=CUSTOM}
+}
